@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <title>WINE QUALITY PREDICTION</title>
+</head>
+<body>
+    <h1>WINE QUALITY PREDICTION</h1>
+  <form action="{{url_for('index') }}" method="post">
+
+  <label>Type:</label>
+  <select name="type">
+    <option value="white">White</option>
+    <option value="red">Red</option>
+  </select><br>
+
+  <label>Fixed Acidity:</label>
+  <input type="text" name="fixed acidity"><br>
+
+  <label>Volatile Acidity:</label>
+  <input type="text" name="volatile acidity"><br>
+
+  <label>Citric Acid:</label>
+  <input type="text" name="citric acid"><br>
+
+  <label>Residual Sugar:</label>
+  <input type="text" name="residual sugar"><br>
+
+  <label>Chlorides:</label>
+  <input type="text" name="chlorides"><br>
+
+  <label>Free Sulfur Dioxide:</label>
+  <input type="text" name="free sulfur dioxide"><br>
+
+  <label>Total Sulfur Dioxide:</label>
+  <input type="text" name="total sulfur dioxide"><br>
+
+  <label>Density:</label>
+  <input type="text" name="density"><br>
+
+  <label>pH:</label>
+  <input type="text" name="pH"><br>
+
+  <label>Sulphates:</label>
+  <input type="text" name="sulphates"><br>
+
+  <label>Alcohol:</label>
+  <input type="text" name="alcohol"><br>
+
+  <input type="submit" value="Predict">
+</form>
+
+<h2>{{ prediction_text }}</h2>
+
+
+    </h1>
+</body>
+</html>
